@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url(responsiveMedia.css);
+body{
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    width: 60%;
+    position: relative;
+}
+
+:root{
+    --color-primal: #00D100;
+}
+header{
+    position: sticky;
+}
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    /* width: 50%; */
+}
+header nav .navLogo{
+    font-weight: bolder;
+    font-size: 25px;
+}
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+}
+header nav ul li{
+    list-style: none;
+}
+header nav ul li a {
+    text-decoration: none;
+    color: #222222;
+}
+header nav .navForm  ul li .btnRegister{
+    background-color: var(--color-primal);
+    padding: 5px 15px;
+    color: #fff;
+}
+
+/* TOP CONTAINER */
+.topContainer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    /* margin: 0 auto; */
+    padding: 5px;
+}
+.topContainer .containerItem {
+    display: flex;
+    flex-direction: column;
+}
+.topContainer .containerItem .topButtons{
+    display: flex;
+    margin-top: 2rem;
+}
+.topContainer .containerItem .topButtons button{
+    border: none;
+    outline: none;
+    padding: .6rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    position: relative;
+}
+#Ripling:hover::before, #Ripling:focus::before {
+    animation: is-ripling 1s cubic-bezier(0.33, 1, 0.68, 1) infinite;
+}
+#Ripling:active {
+    transform: translateY(2px);
+}
+#Ripling:active::before {
+    animation: none;
+}
+#Ripling:before{
+    border: var(--color-primal) solid .2rem;
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+
+
+@keyframes is-ripling {
+    to{
+        opacity: 0;
+        transform: scale(1.15,1.5);
+    }
+}
+.topContainer .containerItem .topButtons button:first-child{
+    background-color: var(--color-primal);
+    color: #fff;
+}
+.topContainer .containerItem .topButtons button:last-child{
+    margin-left: 50px;
+    background-color: transparent;
+    color: #00D100;
+    border: none; 
+}
+.topContainer h1{
+    font-size: 50px;
+    font-weight: bolder;
+}
+.topContainer h1 span{
+    color: var(--color-primal);
+}
+.topContainer .containerImg{
+    width: 50rem;
+    margin:1rem;
+}
+.topContainer .containerImg img{
+    max-width: 150%;
+    min-width: 50%;
+}
+
+/* Middle Container */
+.middleHeader{
+    background-color: rgb(240, 240, 240);
+    padding: 15px;
+    margin-bottom: 5rem;
+}
+.middleHeader div{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+}
+.middleHeader div a {
+    text-decoration: none;
+    color: #222222;
+    font-weight: bold;
+}
+
+/* MIDDLE CONTAINER */
+.middleContainer h2{
+    margin: 0 auto;
+    width: 70%;
+    text-align: center;
+    font-weight: 900;
+    font-size: 2rem;
+    margin-bottom: 4rem;
+}
+
+.middleItems{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+.middleContainer .items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;;
+}
+.middleContainer .items span{
+    text-align: center;
+    width: 30%;
+    font-weight: 600;
+}
+.middleContainer .items p {
+    text-align: center;
+}
+.middleContainer .items img{
+    width: 3rem;
+}
+
+/* SUB Container */
+.subContainer{
+    margin-top: 5rem;
+    margin-bottom: 4rem;
+}
+.subContainer h3{
+    text-align: center;
+}
+.subContainer p{
+    text-align: center;
+}
+.subContainer .subItems{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+}
+.subContainer .subItems img{
+    width: 8rem;
+    margin: 0 30px;
+}
+
+.subContainer .subItems .itemLeft{
+    width: 10rem;
+    height: 3rem;
+}
+.subContainer .subItems .itemRight{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.subContainer .subItems .itemRight span{
+    text-align: left;
+    font-weight: 700;
+}
+.subContainer .subItems .itemRight p {
+    text-align: left;
+}
+
+/* BOT CONTAINER */
+.botContainer{
+    padding: .1rem 0;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+}
+
+.botContainer .botText p {
+    width: 70%;
+}
+.botContainer .botText button{
+    padding: .5rem 1rem;
+    background-color: var(--color-primal);
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 1rem;
+}
+.botContainer .botText button:last-child{
+    border: 2px solid var(--color-primal);
+    background-color: transparent;
+    color: #222222;
+}
+.botContainer .botItems{
+    display: grid;
+    grid-gap: 1.4rem;
+    padding: 1rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 7rem;
+}
+.botContainer .botItems .botButtons{
+    padding: .7rem;
+    /* width: 4rem;
+    height: 4rem; */
+    border-radius: 10px;
+    background: #dad8d8;
+}
+.botContainer .botItems .botButtons:first-child{
+    border-radius: 10px;
+    background: #f1efef;
+    box-shadow:  6px 6px 11px #8f8f8f,
+             -6px -6px 11px #f0eeee;
+
+}
+.botContainer .botItems .botButtons span{
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+    font-weight: 700;
+}
+.botContainer .botItems .botButtons p{
+    opacity: 70%;
+    text-align: center;
+    font-size: 12px;
+    margin: 0 auto;
+}
+
+/* CONTAINER FOOTER */
+.testimonialsContainer{
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #eeee;
+    margin-bottom: 4rem;
+}
+.testimonialsContainer .TestimonialItems{
+    gap: 1rem;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+.testimonialsContainer .TestimonialItems .Testimonial{
+    border: 1px solid #22222274;
+    background-color: rgb(255, 255, 255);
+    padding: .5rem;
+}
+.testimonialsContainer .TestimonialItems .Testimonial span{
+    font-style: italic;
+}
+.testimonialsContainer .TestimonialItems .Testimonial p{
+    opacity: 80%;
+}
+.testimonialsContainer .Testimonial h4{
+    color: rgb(223, 217, 37);
+    text-decoration: underline;
+}
+.testimonialsContainer .TestimonialButtons{
+    display: flex;
+    justify-content: space-evenly;
+}
+.testimonialsContainer button{
+    border: none;
+    padding: 10px;
+    margin: .5rem;
+    cursor: pointer;
+    background-color: #fff;
+}
+.testimonialsContainer button:last-child{
+    background-color: #222222;
+    color: #fff;
+}
+
+/* FOOTER CONTAINER */
+.footerContainer{
+    background-color: #eeeeee00;
+    padding: .5rem; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+.footerContainer .footerQuestions {
+
+}
+.footerContainer .footerQuestions ul li a{
+    text-decoration: none;
+    color: #222222;
+}
+.footerContainer h5{
+    font-size: 2rem;
+}
+.footerContainer .footerSocial ul{
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+}
+.footerContainer .footerSocial ul li{
+    list-style: none;
+}
+.footerContainer .footerSocial ul li a img{
+    width: 2rem;
+}
+article p{
+    text-align: center;
+    opacity: 60%;
+    font-style: italic;
+}
+

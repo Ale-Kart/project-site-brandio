@@ -1,0 +1,15 @@
+@media (max-width: 1060px) {
+    header nav {justify-content: space-between;}
+    header nav #navMedia li{display: none;}
+    header nav .navForm{display: initial;}
+    .topContainer{
+        margin-bottom: 4rem;
+    }
+    .topContainer h1{text-align: center;}
+    .topContainer .containerItem .topButtons{
+        justify-content: center;
+    }
+    .topContainer .containerImg{
+        display: none;
+    }
+}
